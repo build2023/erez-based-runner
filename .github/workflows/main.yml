@@ -37,7 +37,7 @@ jobs:
         with:
           context:  .
           file:  ./Dockerfile
-          tags:  build2023/liorm_repo:1.0
+          tags:  build2023/liorm_repo:2.0
           push:  true
           
         
