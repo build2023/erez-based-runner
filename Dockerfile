@@ -21,6 +21,8 @@ RUN rpm -i /tmp/epel-release-latest-8.noarch.rpm && \
   pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install GitPython && \
   pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install python-gitlab && \
   pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install bitbucket-python && \
+  pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install requests && \
+  
 
 
   ansible-galaxy collection install kubernetes.core &&  \
