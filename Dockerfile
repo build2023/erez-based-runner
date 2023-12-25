@@ -18,6 +18,11 @@ RUN rpm -i /tmp/epel-release-latest-8.noarch.rpm && \
   python3 -m pip install --upgrade pip && \
   pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install jmespath && \  
   pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install ansible && \
+  pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install GitPython && \
+  pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install python-gitlab && \
+  pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org install bitbucket-python && \
+
+
   ansible-galaxy collection install kubernetes.core &&  \
   rm -f /tmp/*.rpm
  
